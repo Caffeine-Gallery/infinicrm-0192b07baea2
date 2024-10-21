@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DFINITY Employee CRM</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="app">
+        <h1>DFINITY Employee CRM</h1>
+        <div id="employeeForm">
+            <h2>Add/Update Employee</h2>
+            <input type="hidden" id="employeeId">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="department" placeholder="Department" required>
+            <input type="text" id="position" placeholder="Position" required>
+            <button id="submitEmployee">Submit</button>
+        </div>
+        <div id="employeeList">
+            <h2>Employee List</h2>
+            <ul id="employees"></ul>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
